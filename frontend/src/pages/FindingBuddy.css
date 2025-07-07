@@ -1,0 +1,99 @@
+/* Dark Blue Theme for Finding Buddy Component */
+
+.finding-buddy-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #0a1929;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .finding-buddy-card {
+    background-color: #132f4c;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    border: 1px solid #1e4976;
+  }
+  
+  .finding-buddy-title {
+    color: #66b2ff;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+  }
+  
+  .finding-buddy-message {
+    color: #b6c2cf;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .cancel-button {
+    background-color: #1e4976;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .cancel-button:hover {
+    background-color: #2a69a3;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .cancel-button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .redirecting-message {
+    color: #66b2ff;
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+    animation: pulse 1.5s infinite;
+  }
+  
+  /* Loading Spinner */
+  .loading-spinner {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem auto;
+  }
+  
+  .spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(102, 178, 255, 0.2);
+    border-radius: 50%;
+    border-top-color: #66b2ff;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
